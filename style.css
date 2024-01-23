@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(132, 132, 132);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#grid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid red; */
+    background: rgb(141, 73, 158);
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 black;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4,1fr);
+    height: 570px;
+    width: 380px;
+}
+#grid img{
+    height: 68px;
+    width: 68px;
+    border-radius: 18px;
+    margin: 13px;
+}
+.matched{
+    visibility: hidden;
+}
+.time{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-weight: 900;
+    color: cyan;
+}
+.time2{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-weight: 900;
+    color: cyan;
+}
+#welcome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: yellow;
+    border-radius: 20px;
+    height: 208px;
+    width: 353px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+#btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 35px;
+    width: 80px;
+    border: none;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    margin: 42px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -170%);
+    background: linear-gradient(to right, red, green, blue, purple);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -moz-background-clip: text;
+}
